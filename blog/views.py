@@ -25,7 +25,7 @@ class PostListView(ListView):
 	context_object_name = 'posts'
 	#order posts from recent to oldest
 	ordering = ['-date_posted']
-	paginate_by = 5
+	paginate_by = 3
 
 
 class UserPostListView(ListView):
@@ -34,7 +34,7 @@ class UserPostListView(ListView):
 	context_object_name = 'posts'
 	#order posts from recent to oldest
 	ordering = ['-date_posted']
-	paginate_by = 5
+	paginate_by = 3
 
 	#get_queryset determines the list of objects that you want to display
 	def get_queryset(self):
